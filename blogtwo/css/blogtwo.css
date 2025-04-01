@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat:wght@300;400;600&display=swap');
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #8A8AB3;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 999;
+  padding: 1rem 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #6E55C1;
+  font-family: 'Limelight', cursive;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #A988DE;
+}
+
+/* Hero Section */
+.vault-hero {
+  background-image: url('../img/vaultbackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Welcome Section */
+.vault-welcome {
+  padding: 6rem 2rem;
+}
+
+.vault-welcome-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vault-info-text {
+  flex: 1 1 48%;
+}
+
+.vault-info-text h2 {
+  font-family: 'Limelight', cursive;
+  font-size: 2rem;
+  color: #6E55C1;
+  margin-bottom: 1.5rem;
+}
+
+.vault-info-text ul {
+  list-style: none;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  padding-left: 0;
+}
+
+.vault-info-image {
+  flex: 1 1 48%;
+  text-align: center;
+}
+
+.vault-info-image img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+/* Section 3: The VAULT Experience */
+.vault-experience {
+  padding: 7rem 2rem 6rem;
+  background-color: #000;
+}
+
+.experience-title-wrap {
+  text-align: left;
+  margin: 4rem 2rem 2rem;
+}
+
+.vault-experience-title {
+  max-width: 650px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.vault-experience-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vault-experience-text {
+  flex: 1 1 48%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.vault-text-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #8A8AB3;
+}
+
+.vault-text-inner p {
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.75;
+}
+
+.vault-experience-image {
+  flex: 1 1 48%;
+  text-align: center;
+}
+
+.vault-experience-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.vault-highlights ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.vault-highlights li::before {
+  content: "• ";
+  color: #A988DE;
+  font-weight: bold;
+  margin-right: 0.4rem;
+}
+
+.vault-instagram a {
+  color: #A988DE;
+  text-decoration: none;
+}
+
+.vault-instagram a:hover {
+  text-decoration: underline;
+}
+
+/* Section 4: Music & DJs */
+.vault-music {
+  padding: 6rem 2rem;
+  background-color: #000;
+}
+
+.music-title-wrap {
+  text-align: left;
+  margin: 4rem 2rem 2rem;
+}
+
+.music-section-title {
+  max-width: 650px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.vault-music-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vault-music-image {
+  flex: 1 1 48%;
+  text-align: center;
+}
+
+.vault-music-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.vault-music-text {
+  flex: 1 1 48%;
+  color: #8A8AB3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vault-music-text p {
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+
+.vault-music-text h4 {
+  font-family: 'Limelight', cursive;
+  font-size: 1.4rem;
+  color: #6E55C1;
+  margin: 1rem 0 0.5rem;
+}
+
+.vault-music-text ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Section 5: Drinks & Social Scene */
+.vault-drinks {
+  padding: 6rem 2rem;
+  background-color: #000;
+}
+
+.drinks-title-wrap {
+  text-align: right;
+  margin: 4rem 2rem 2rem;
+}
+
+.drinks-section-title {
+  max-width: 650px;
+  width: 100%;
+  margin: 0;
+}
+
+.vault-drinks-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vault-drinks-text {
+  flex: 1 1 48%;
+  color: #8A8AB3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vault-drinks-text p {
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+
+.vault-drinks-text h4 {
+  font-family: 'Limelight', cursive;
+  font-size: 1.4rem;
+  color: #6E55C1;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.vault-drinks-list,
+.vault-social-list {
+  list-style: none;
+  padding-left: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.vault-drinks-list li::before,
+.vault-social-list li::before {
+  content: "✔ ";
+  color: #A988DE;
+  font-weight: bold;
+}
+
+.vault-drinks-image {
+  flex: 1 1 48%;
+  text-align: center;
+}
+
+.vault-drinks-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+}
+/* Footer */
+.vault-footer {
+    background-color: #000;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .back-to-top {
+    font-family: 'Limelight', cursive;
+    font-size: 1.4rem;
+    color: #6E55C1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .back-to-top:hover {
+    color: #A988DE;
+  }
+  

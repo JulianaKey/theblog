@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat:wght@300;400;600&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #8A8AB3;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 999;
+  padding: 1rem 2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #6E55C1;
+  font-family: 'Limelight', cursive;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #A988DE;
+}
+
+/* Hero Background */
+.zu-hero {
+  background-image: url('../img/zubackground.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Section Title Images - Bigger & Consistent */
+.experience-title-wrap,
+.music-title-wrap,
+.drinks-title-wrap {
+  text-align: left;
+  margin: 4rem 2rem 2rem;
+}
+
+.experience-title-wrap img,
+.music-title-wrap img,
+.drinks-title-wrap img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* Section 2: Welcome */
+.zu-welcome {
+  padding: 6rem 2rem;
+}
+
+.zu-welcome-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.zu-info-text {
+  flex: 1 1 48%;
+}
+
+.zu-info-text h2 {
+  font-family: 'Limelight', cursive;
+  font-size: 2rem;
+  color: #6E55C1;
+  margin-bottom: 1.5rem;
+}
+
+.zu-info-text ul {
+  list-style: none;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  padding-left: 0;
+}
+
+.zu-info-image {
+  flex: 1 1 48%;
+  text-align: center;
+}
+
+.zu-info-image img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+/* Section 3: Experience */
+.zu-experience {
+  padding: 6rem 2rem;
+}
+
+.zu-experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.zu-experience-image,
+.zu-experience-text {
+  flex: 1 1 48%;
+}
+
+.zu-experience-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.zu-text-inner p {
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+}
+
+.zu-highlights ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.zu-highlights li::before {
+  content: "✔ ";
+  color: #A988DE;
+  font-weight: bold;
+}
+
+.zu-instagram a {
+  color: #A988DE;
+  text-decoration: none;
+}
+
+.zu-instagram a:hover {
+  text-decoration: underline;
+}
+
+/* Section 4: Music */
+.zu-music {
+  padding: 6rem 2rem;
+}
+
+.zu-music-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.zu-music-text,
+.zu-music-image {
+  flex: 1 1 48%;
+}
+
+.zu-music-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.zu-music-text h4 {
+  font-family: 'Limelight', cursive;
+  color: #6E55C1;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.zu-music-text ul {
+  padding-left: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Section 5: Drinks */
+.zu-drinks {
+  padding: 6rem 2rem;
+}
+
+.zu-drinks-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.zu-drinks-text,
+.zu-drinks-image {
+  flex: 1 1 48%;
+}
+
+.zu-drinks-image img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.zu-drinks-text h4 {
+  font-family: 'Limelight', cursive;
+  color: #6E55C1;
+  font-size: 1.3rem;
+  margin: 1.5rem 0 0.7rem;
+}
+
+.zu-drinks-list,
+.zu-social-list,
+.zu-cover-list {
+  list-style: none;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.zu-drinks-list li::before,
+.zu-social-list li::before,
+.zu-cover-list li::before {
+  content: "✔ ";
+  color: #A988DE;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.back-to-top {
+  font-family: 'Limelight', cursive;
+  font-size: 1.2rem;
+  color: #6E55C1;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  color: #A988DE;
+  text-decoration: underline;
+}
