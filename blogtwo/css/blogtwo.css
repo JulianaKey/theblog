@@ -9,7 +9,7 @@
 
 body {
   background-color: #000;
-  color: #8A8AB3;
+  color: #B79EFF;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
 }
@@ -33,14 +33,14 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: #6E55C1;
+  color: #B79EFF;
   font-family: 'Limelight', cursive;
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #A988DE;
+  color: #fff;
 }
 
 /* Hero Section */
@@ -49,13 +49,14 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
 }
 
 /* Welcome Section */
 .vault-welcome {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .vault-welcome-container {
@@ -75,7 +76,7 @@ body {
 .vault-info-text h2 {
   font-family: 'Limelight', cursive;
   font-size: 2rem;
-  color: #6E55C1;
+  color: #B79EFF;
   margin-bottom: 1.5rem;
 }
 
@@ -97,22 +98,27 @@ body {
   height: auto;
 }
 
-/* Section 3: The VAULT Experience */
-.vault-experience {
-  padding: 7rem 2rem 6rem;
-  background-color: #000;
-}
-
-.experience-title-wrap {
+/* Section Titles */
+.experience-title-wrap,
+.music-title-wrap,
+.drinks-title-wrap {
   text-align: left;
-  margin: 4rem 2rem 2rem;
+  margin: 3rem 2rem 1rem;
 }
 
-.vault-experience-title {
-  max-width: 650px;
+.vault-experience-title,
+.music-section-title,
+.drinks-section-title {
+  max-width: 700px;
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* Experience */
+.vault-experience {
+  padding: 4rem 2rem;
+  background-color: #000;
 }
 
 .vault-experience-container {
@@ -135,7 +141,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  color: #8A8AB3;
+  color: #B79EFF;
 }
 
 .vault-text-inner p {
@@ -165,13 +171,13 @@ body {
 
 .vault-highlights li::before {
   content: "• ";
-  color: #A988DE;
+  color: #B79EFF;
   font-weight: bold;
   margin-right: 0.4rem;
 }
 
 .vault-instagram a {
-  color: #A988DE;
+  color: #B79EFF;
   text-decoration: none;
 }
 
@@ -179,22 +185,10 @@ body {
   text-decoration: underline;
 }
 
-/* Section 4: Music & DJs */
+/* Music */
 .vault-music {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   background-color: #000;
-}
-
-.music-title-wrap {
-  text-align: left;
-  margin: 4rem 2rem 2rem;
-}
-
-.music-section-title {
-  max-width: 650px;
-  width: 100%;
-  height: auto;
-  display: block;
 }
 
 .vault-music-container {
@@ -221,7 +215,7 @@ body {
 
 .vault-music-text {
   flex: 1 1 48%;
-  color: #8A8AB3;
+  color: #B79EFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -236,7 +230,7 @@ body {
 .vault-music-text h4 {
   font-family: 'Limelight', cursive;
   font-size: 1.4rem;
-  color: #6E55C1;
+  color: #B79EFF;
   margin: 1rem 0 0.5rem;
 }
 
@@ -247,21 +241,10 @@ body {
   line-height: 1.6;
 }
 
-/* Section 5: Drinks & Social Scene */
+/* Drinks */
 .vault-drinks {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   background-color: #000;
-}
-
-.drinks-title-wrap {
-  text-align: right;
-  margin: 4rem 2rem 2rem;
-}
-
-.drinks-section-title {
-  max-width: 650px;
-  width: 100%;
-  margin: 0;
 }
 
 .vault-drinks-container {
@@ -276,7 +259,7 @@ body {
 
 .vault-drinks-text {
   flex: 1 1 48%;
-  color: #8A8AB3;
+  color: #B79EFF;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -291,7 +274,7 @@ body {
 .vault-drinks-text h4 {
   font-family: 'Limelight', cursive;
   font-size: 1.4rem;
-  color: #6E55C1;
+  color: #B79EFF;
   margin-top: 2rem;
   margin-bottom: 0.8rem;
 }
@@ -304,14 +287,6 @@ body {
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
-
-.vault-drinks-list li::before,
-.vault-social-list li::before {
-  content: "✔ ";
-  color: #A988DE;
-  font-weight: bold;
-}
-
 .vault-drinks-image {
   flex: 1 1 48%;
   text-align: center;
@@ -323,22 +298,23 @@ body {
   height: auto;
   border-radius: 20px;
 }
+
 /* Footer */
 .vault-footer {
-    background-color: #000;
-    padding: 3rem 2rem;
-    text-align: center;
-  }
-  
-  .back-to-top {
-    font-family: 'Limelight', cursive;
-    font-size: 1.4rem;
-    color: #6E55C1;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .back-to-top:hover {
-    color: #A988DE;
-  }
-  
+  background-color: #000;
+  padding: 2.5rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.back-to-top {
+  font-family: 'Limelight', cursive;
+  font-size: 1.4rem;
+  color: #B79EFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-to-top:hover {
+  color: #fff;
+}

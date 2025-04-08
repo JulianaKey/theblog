@@ -9,7 +9,7 @@
 
 body {
   background-color: #000;
-  color: #8A8AB3;
+  color: #B79EFF; /* Updated lilac color for better contrast */
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
 }
@@ -33,14 +33,14 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: #6E55C1;
+  color: #B79EFF;
   font-family: 'Limelight', cursive;
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #A988DE;
+  color: white;
 }
 
 /* Hero Background */
@@ -51,6 +51,7 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
+  background-attachment: fixed; /* fixed background */
 }
 
 /* Section Title Images - Bigger & Consistent */
@@ -58,22 +59,21 @@ body {
 .music-title-wrap,
 .drinks-title-wrap {
   text-align: left;
-  margin: 4rem 2rem 2rem;
+  margin: 3rem 2rem 1.5rem; /* tighter spacing */
 }
 
 .experience-title-wrap img,
 .music-title-wrap img,
 .drinks-title-wrap img {
-  max-width: 600px;
+  max-width: 700px; /* bigger title */
   width: 100%;
   height: auto;
   display: block;
 }
 
-
 /* Section 2: Welcome */
 .zu-welcome {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem 2rem; /* tighter spacing */
 }
 
 .zu-welcome-container {
@@ -93,8 +93,8 @@ body {
 .zu-info-text h2 {
   font-family: 'Limelight', cursive;
   font-size: 2rem;
-  color: #6E55C1;
-  margin-bottom: 1.5rem;
+  color: #B79EFF;
+  margin-bottom: 1.2rem;
 }
 
 .zu-info-text ul {
@@ -117,7 +117,7 @@ body {
 
 /* Section 3: Experience */
 .zu-experience {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem 2rem; /* tighter spacing */
 }
 
 .zu-experience-container {
@@ -149,14 +149,8 @@ body {
   padding-left: 0;
 }
 
-.zu-highlights li::before {
-  content: "✔ ";
-  color: #A988DE;
-  font-weight: bold;
-}
-
 .zu-instagram a {
-  color: #A988DE;
+  color: #D4C1FF;
   text-decoration: none;
 }
 
@@ -166,7 +160,7 @@ body {
 
 /* Section 4: Music */
 .zu-music {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem 2rem;
 }
 
 .zu-music-container {
@@ -190,7 +184,7 @@ body {
 
 .zu-music-text h4 {
   font-family: 'Limelight', cursive;
-  color: #6E55C1;
+  color: #B79EFF;
   font-size: 1.3rem;
   margin-top: 1.5rem;
   margin-bottom: 0.7rem;
@@ -204,7 +198,7 @@ body {
 
 /* Section 5: Drinks */
 .zu-drinks {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem 4rem;
 }
 
 .zu-drinks-container {
@@ -228,7 +222,7 @@ body {
 
 .zu-drinks-text h4 {
   font-family: 'Limelight', cursive;
-  color: #6E55C1;
+  color: #B79EFF;
   font-size: 1.3rem;
   margin: 1.5rem 0 0.7rem;
 }
@@ -241,30 +235,21 @@ body {
   font-size: 1rem;
 }
 
-.zu-drinks-list li::before,
-.zu-social-list li::before,
-.zu-cover-list li::before {
-  content: "✔ ";
-  color: #A988DE;
-  font-weight: bold;
-}
-
 /* Footer */
 .footer {
   background-color: #000;
   padding: 2rem;
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .back-to-top {
   font-family: 'Limelight', cursive;
   font-size: 1.2rem;
-  color: #6E55C1;
+  color: #B79EFF;
   text-decoration: none;
 }
 
 .back-to-top:hover {
-  color: #A988DE;
-  text-decoration: underline;
+  color: white;
 }

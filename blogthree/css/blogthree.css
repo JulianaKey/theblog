@@ -9,7 +9,7 @@
 
 body {
   background-color: #000;
-  color: #8A8AB3;
+  color: #B79EFF;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
 }
@@ -33,29 +33,30 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: #6E55C1;
+  color: #B79EFF;
   font-family: 'Limelight', cursive;
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #A988DE;
+  color: #fff;
 }
 
-/* Section 1: Hero Background */
+/* Hero Section */
 .cante-hero {
   background-image: url('../img/cantebackground.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
 }
 
-/* Section 2: Welcome Info + Club Card */
+/* Welcome Section */
 .cante-welcome {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
   background-color: #000;
 }
 
@@ -76,7 +77,7 @@ body {
 .cante-info-text h2 {
   font-family: 'Limelight', cursive;
   font-size: 2rem;
-  color: #6E55C1;
+  color: #B79EFF;
   margin-bottom: 1.5rem;
 }
 
@@ -99,255 +100,224 @@ body {
   border-radius: 20px;
 }
 
+/* Section Titles */
+.experience-title-wrap,
+.music-title-wrap,
+.drinks-title-wrap {
+  text-align: left;
+  margin: 3rem 2rem 1rem;
+}
+
+.cante-experience-title,
+.music-section-title,
+.drinks-section-title {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Experience Section */
+.cante-experience {
+  padding: 4rem 2rem;
+  background-color: #000;
+}
+
+.cante-experience-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cante-experience-text {
+  flex: 1 1 48%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.cante-text-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #B79EFF;
+}
+
+.cante-text-inner p {
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.75;
+}
+
+.cante-highlights ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.cante-highlights li::before {
+  content: "• ";
+  color: #B79EFF;
+  font-weight: bold;
+  margin-right: 0.4rem;
+}
+
+.cante-instagram a {
+  color: #B79EFF;
+  text-decoration: none;
+}
+
+.cante-instagram a:hover {
+  text-decoration: underline;
+}
+
+.cante-experience-image {
+  flex: 1 1 48%;
+  text-align: center;
+}
+
+.cante-experience-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Music Section */
+.cante-music {
+  padding: 4rem 2rem;
+  background-color: #000;
+}
+
+.cante-music-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cante-music-image {
+  flex: 1 1 48%;
+  text-align: center;
+}
+
+.cante-music-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.cante-music-text {
+  flex: 1 1 48%;
+  color: #B79EFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cante-music-text p {
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+
+.cante-music-text h4 {
+  font-family: 'Limelight', cursive;
+  font-size: 1.4rem;
+  color: #B79EFF;
+  margin: 1rem 0 0.5rem;
+}
+
+.cante-music-text ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Drinks Section */
+.cante-drinks {
+  padding: 4rem 2rem;
+  background-color: #000;
+}
+
+.cante-drinks-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cante-drinks-text {
+  flex: 1 1 48%;
+  color: #B79EFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cante-drinks-text p {
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+
+.cante-drinks-text h4 {
+  font-family: 'Limelight', cursive;
+  font-size: 1.4rem;
+  color: #B79EFF;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.cante-drinks-list,
+.cante-social-list,
+.cante-cover-list {
+  list-style: none;
+  padding-left: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.cante-drinks-image {
+  flex: 1 1 48%;
+  text-align: center;
+}
+
+.cante-drinks-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 20px;
+}
+
 /* Footer */
 .footer {
-  padding: 4rem 2rem 2rem;
+  padding: 2.5rem;
   background-color: #000;
   text-align: center;
+  margin-top: 4rem;
 }
 
 .back-to-top {
   font-family: 'Limelight', cursive;
-  color: #6E55C1;
+  color: #B79EFF;
   font-size: 1.2rem;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .back-to-top:hover {
-  color: #A988DE;
+  color: #fff;
 }
-/* Section 3: The CANTE Experience */
-.cante-experience {
-    padding: 7rem 2rem 6rem;
-    background-color: #000;
-  }
-  
-  .experience-title-wrap {
-    text-align: left;
-    margin: 4rem 2rem 2rem;
-  }
-  
-  .cante-experience-title {
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  /* Layout Container */
-  .cante-experience-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Left: Text */
-  .cante-experience-text {
-    flex: 1 1 48%;
-    display: flex;
-    align-items: flex-start;
-  }
-  
-  .cante-text-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    color: #8A8AB3;
-  }
-  
-  .cante-text-inner p {
-    font-size: 1.05rem;
-    margin-bottom: 1.2rem;
-    line-height: 1.75;
-  }
-  
-  .cante-highlights ul {
-    list-style: none;
-    padding-left: 0;
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-  
-  .cante-highlights li::before {
-    content: "• ";
-    color: #A988DE;
-    font-weight: bold;
-    margin-right: 0.4rem;
-  }
-  
-  .cante-instagram a {
-    color: #A988DE;
-    text-decoration: none;
-  }
-  
-  .cante-instagram a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Right: Image */
-  .cante-experience-image {
-    flex: 1 1 48%;
-    text-align: center;
-  }
-  
-  .cante-experience-image img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 20px;
-  }
-  /* Section 4: Music & DJs */
-.cante-music {
-    padding: 6rem 2rem;
-    background-color: #000;
-  }
-  
-  .music-title-wrap {
-    text-align: left;
-    margin: 4rem 2rem 2rem;
-  }
-  
-  .music-section-title {
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .cante-music-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Left: Image */
-  .cante-music-image {
-    flex: 1 1 48%;
-    text-align: center;
-  }
-  
-  .cante-music-image img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 20px;
-  }
-  
-  /* Right: Text */
-  .cante-music-text {
-    flex: 1 1 48%;
-    color: #8A8AB3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .cante-music-text p {
-    font-size: 1.05rem;
-    margin-bottom: 1.2rem;
-    line-height: 1.7;
-  }
-  
-  .cante-music-text h4 {
-    font-family: 'Limelight', cursive;
-    font-size: 1.4rem;
-    color: #6E55C1;
-    margin: 1rem 0 0.5rem;
-  }
-  
-  .cante-music-text ul {
-    padding-left: 1.2rem;
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  /* Section 5: Drinks & Social Scene */
-.cante-drinks {
-    padding: 6rem 2rem;
-    background-color: #000;
-  }
-  
-  .drinks-title-wrap {
-    text-align: left;
-    margin: 4rem 2rem 2rem;
-  }
-  
-  .drinks-section-title {
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-  .cante-drinks-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 3rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .cante-drinks-text {
-    flex: 1 1 48%;
-    color: #8A8AB3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .cante-drinks-text p {
-    font-size: 1.05rem;
-    margin-bottom: 1.2rem;
-    line-height: 1.7;
-  }
-  
-  .cante-drinks-text h4 {
-    font-family: 'Limelight', cursive;
-    font-size: 1.4rem;
-    color: #6E55C1;
-    margin-top: 2rem;
-    margin-bottom: 0.8rem;
-  }
-  
-  .cante-drinks-list,
-  .cante-social-list,
-  .cante-cover-list {
-    list-style: none;
-    padding-left: 1.2rem;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-  
-  .cante-drinks-list li::before,
-  .cante-social-list li::before,
-  .cante-cover-list li::before {
-    content: "✔ ";
-    color: #A988DE;
-    font-weight: bold;
-  }
-  
-  /* Image */
-  .cante-drinks-image {
-    flex: 1 1 48%;
-    text-align: center;
-  }
-  
-  .cante-drinks-image img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 20px;
-  }
-  
